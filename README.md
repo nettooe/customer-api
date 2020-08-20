@@ -19,6 +19,15 @@ Be aware that it’s not an _über-jar_ as the dependencies are copied into the 
 
 The application is now runnable using `java -jar target/customer-api-1.0.0-SNAPSHOT-runner.jar`.
 
+## API Documentation
+
+OpenAPI
+http://localhost:8080/openapi
+
+Swagger-UI
+http://localhost:8080/swagger-ui/
+
+
 ## Creating a native executable
 
 You can create a native executable using: `./mvnw package -Pnative`.
