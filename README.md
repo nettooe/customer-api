@@ -54,6 +54,8 @@ http://ec2co-ecsel-1w3awmkxgmj5m-375907991.us-east-1.elb.amazonaws.com:8080/swag
 
 2 - Expanda o o grupo "user" e clique em "Try it out"
 
+![step_002](https://github.com/nettooe/customer-api/blob/master/docs/step_002.png?raw=true)
+
 3 - Into 'Request Body', type as shown below and then click the "Execute" button.
 
 ```
@@ -62,10 +64,15 @@ http://ec2co-ecsel-1w3awmkxgmj5m-375907991.us-east-1.elb.amazonaws.com:8080/swag
   "username": "user"
 }
 ```
+![step_003](https://github.com/nettooe/customer-api/blob/master/docs/step_003.png?raw=true)
 
 4 - In the body of the answer, copy the value shown in the "token" key.
 
+![step_004](https://github.com/nettooe/customer-api/blob/master/docs/step_004.png?raw=true)
+
 5 - Click on the "Authorize" button at the top of the page on the right and then paste the contents of the token into the dialog that will open.
+
+![step_005](https://github.com/nettooe/customer-api/blob/master/docs/step_005.png?raw=true)
 
 6 - There, you have just completed the step-by-step required by the security layer and are authorized to try the other endpoints. If a 401 status error occurs, then repeat the previous steps to generate a new token.
 
