@@ -45,3 +45,27 @@ see more at: https://hub.docker.com/r/nettooe/customer-api-jvm
 ```
 docker run -d -p 8080:8080 --env MYSQL_USERNAME=<username> --env MYSQL_PASSWORD=<password> --env MYSQL_URL=<url> --name customer-api nettooe/customer-api-jvm:1.0.1
 ```
+
+## Playing with a running instance
+
+1 - Access the swagger interface at:
+
+http://ec2co-ecsel-1w3awmkxgmj5m-375907991.us-east-1.elb.amazonaws.com:8080/swagger-ui/
+
+2 - Expanda o o grupo "user" e clique em "Try it out"
+
+3 - Into 'Request Body', type as shown below and then click the "Execute" button.
+
+```
+{
+  "password": "user",
+  "username": "user"
+}
+```
+
+4 - In the body of the answer, copy the value shown in the "token" key.
+
+5 - Click on the "Authorize" button at the top of the page on the right and then paste the contents of the token into the dialog that will open.
+
+6 - There, you have just completed the step-by-step required by the security layer and are authorized to try the other endpoints. If a 401 status error occurs, then repeat the previous steps to generate a new token.
+
