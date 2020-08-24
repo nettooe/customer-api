@@ -44,6 +44,9 @@ RUN microdnf install curl ca-certificates ${JAVA_PACKAGE} \
 
 # Configure the JAVA_OPTIONS, you can add -XshowSettings:vm to also display the heap size.
 ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+ENV MYSQL_USERNAME=$MYSQL_USERNAME
+ENV MYSQL_PASSWORD=$MYSQL_PASSWORD
+ENV MYSQL_URL=$MYSQL_URL
 
 COPY target/lib/* /deployments/lib/
 COPY target/*-runner.jar /deployments/app.jar

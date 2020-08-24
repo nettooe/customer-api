@@ -19,6 +19,11 @@ WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
     && chown 1001:root /work
+    
+ENV MYSQL_USERNAME=$MYSQL_USERNAME
+ENV MYSQL_PASSWORD=$MYSQL_PASSWORD
+ENV MYSQL_URL=$MYSQL_URL
+
 COPY --chown=1001:root target/*-runner /work/application
 
 EXPOSE 8080
