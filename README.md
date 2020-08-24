@@ -37,3 +37,11 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/customer-api-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+
+## Run using docker container
+
+see more at: https://hub.docker.com/r/nettooe/customer-api-jvm
+
+```
+docker run -d -p 8080:8080 --env MYSQL_USERNAME=<username> --env MYSQL_PASSWORD=<password> --env MYSQL_URL=<url> --name customer-api nettooe/customer-api-jvm:1.0.1
+```
