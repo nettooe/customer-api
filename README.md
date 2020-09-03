@@ -50,9 +50,9 @@ docker run -d -p 8080:8080 --env MYSQL_USERNAME=<username> --env MYSQL_PASSWORD=
 
 1 - Access the swagger interface at:
 
-http://ec2co-ecsel-1w3awmkxgmj5m-375907991.us-east-1.elb.amazonaws.com:8080/swagger-ui/
+http://localhost:8080/swagger-ui/
 
-2 - Expanda o o grupo "user" e clique em "Try it out"
+2 - Expand "user" group and click into "Try it out"
 
 ![step_002](https://github.com/nettooe/customer-api/blob/master/docs/step_002.png?raw=true)
 
